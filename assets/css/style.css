@@ -298,6 +298,142 @@ main .session1 .navigation .dish .plats .price {
   font-size: 1.3rem;
   font-weight: bold;
 }
+main .session1 .reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  width: 80%;
+  margin: auto;
+}
+main .session1 .reservation .part-1 {
+  background: rgb(0, 0, 0);
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .session1 .reservation .part-1 .title p {
+  font-family: Allura;
+  font-size: 3rem;
+  color: rgb(180, 122, 69);
+}
+main .session1 .reservation .part-1 .title h2 {
+  font-family: Poppins;
+  letter-spacing: 3px;
+}
+main .session1 .reservation .part-1 .days h2 {
+  color: rgb(180, 122, 69);
+  margin-top: 10px;
+  text-align: center;
+}
+main .session1 .reservation .part-1 .days p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+main .session1 .reservation .part-1 h2 {
+  color: rgb(180, 122, 69);
+}
+main .session1 .reservation form {
+  background: rgb(238, 238, 238);
+  width: 70%;
+}
+main .session1 .reservation form h2 {
+  color: rgb(180, 122, 69);
+  font-family: Allura;
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: center;
+}
+main .session1 .reservation form h2 span {
+  font-family: Poppins;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+main .session1 .reservation form .line1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+main .session1 .reservation form .line1 input,
+main .session1 .reservation form .line1 select {
+  width: 200px;
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid rgb(33, 32, 30);
+  padding: 4px 0;
+}
+main .session1 .reservation form .line2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+main .session1 .reservation form .line2 input {
+  width: 200px;
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid rgb(33, 32, 30);
+  padding: 4px 0;
+}
+main .session1 .reservation form .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+main .session1 .reservation form .btn button {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-family: Poppins;
+  background: rgb(0, 0, 0);
+  color: rgb(238, 238, 238);
+  border-radius: 149px 149px 149px 149px;
+  -webkit-border-radius: 149px 149px 149px 149px;
+  -moz-border-radius: 149px 149px 149px 149px;
+  cursor: pointer;
+}
 
 .background {
   margin-top: 10%;
@@ -305,6 +441,7 @@ main .session1 .navigation .dish .plats .price {
   height: 700px;
   position: relative;
   background: url("./../img/bg-menu-01.jpg") center/cover;
+  margin-bottom: 100px;
 }
 .background .navigation {
   position: absolute;

@@ -1,7 +1,7 @@
 main {
   .session1 {
-    .dis-container{
-        text-align: center;
+    .dis-container {
+      text-align: center;
     }
     .dis {
       color: $color3;
@@ -64,6 +64,106 @@ main {
             color: $color3;
             font-size: 1.3rem;
             font-weight: bold;
+          }
+        }
+      }
+    }
+    .reservation {
+      @include flexbox;
+      align-items: normal;
+      width: calc(100% - 20%);
+      margin: auto;
+      .part-1 {
+        background: $black2;
+        width: 30%;
+        @include flexbox;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+          p {
+            font-family: Allura;
+            font-size: 3rem;
+            color: $color3;
+          }
+          h2 {
+            font-family: Poppins;
+            letter-spacing: 3px;
+          }
+        }
+        .days {
+          h2 {
+            color: $color3;
+            margin-top: 10px;
+            text-align: center;
+          }
+          p {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+          }
+        }
+        h2 {
+          color: $color3;
+        }
+      }
+      form {
+        background: $white1;
+        width: 70%;
+        h2 {
+          color: $color3;
+          font-family: Allura;
+          font-size: 3rem;
+          font-weight: lighter;
+          text-align: center;
+          span {
+            font-family: Poppins;
+            font-size: 2rem;
+            color: $black2;
+          }
+        }
+        .line1 {
+          @include flexbox;
+          align-items: flex-end;
+          justify-content: space-around;
+          input,
+          select {
+            width: 200px;
+            border: none;
+            background: transparent;
+            outline: none;
+            border-bottom: 1px solid $black;
+            padding: 4px 0;
+          }
+        }
+        .line2 {
+          @include flexbox;
+          align-items: flex-end;
+          justify-content: space-around;
+          margin-top: 30px;
+          input {
+            width: 200px;
+            border: none;
+            background: transparent;
+            outline: none;
+            border-bottom: 1px solid $black;
+            padding: 4px 0;
+          }
+        }
+        .btn {
+          @include flexbox;
+          justify-content: center;
+          margin-top: 50px;
+          button {
+            padding: 10px 20px;
+            font-size: 1.3rem;
+            font-family: Poppins;
+            background: $black2;
+            color: $white1;
+            border-radius: 149px 149px 149px 149px;
+            -webkit-border-radius: 149px 149px 149px 149px;
+            -moz-border-radius: 149px 149px 149px 149px;
+            cursor: pointer;
           }
         }
       }

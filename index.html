@@ -85,16 +85,31 @@
       <session class="session1">
         <div class="dis-container">
           <h3 class="dis">Discover</h3>
-        <img src="assets/img/ic-plate.png" alt="Image" />
+          <img src="assets/img/ic-plate.png" alt="Image" />
         </div>
         <div class="background">
           <div class="navigation">
             <ul>
-              <li><a href="#">Breakfast</a> <hr> </li>
-              <li><a href="#">Lunch</a> <hr> </li>
-              <li><a href="#">Dinner</a> <hr> </li>
-              <li><a href="#">Drinks</a> <hr> </li>
-              <li><a href="#">Others</a> <hr> </li>
+              <li>
+                <a href="#">Breakfast</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#">Lunch</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#">Dinner</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#">Drinks</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#">Others</a>
+                <hr />
+              </li>
             </ul>
             <div class="dish">
               <div class="part-1">
@@ -180,50 +195,54 @@
           </div>
         </div>
         <div class="reservation">
-          <div>
-            <div>
+          <div class="part-1">
+            <div class="title">
               <p>Time</p>
               <h2>OPEN</h2>
             </div>
             <div>
               <img src="assets/img/ic-plate.png" alt="Image" />
             </div>
-            <div>
+            <div class="days">
               <h2>MONDAY - FRIDAY</h2>
               <p>
                 7AM - 11 AM(Breakfast) <br />
                 11AM-10PM(Lunch/Dinner)
               </p>
             </div>
-            <div>
+            <div class="days">
               <h2>SATURDAY - SUNDAY</h2>
               <p>
-                8AM - 1PM <br />
+                8AM - 1PM(Brunch) <br />
                 11AM-10PM(Lunch/Dinner)
               </p>
             </div>
-            <p class="number">+15 890 979 25 52</p>
+            <h2 class="number">+15 890 979 25 52</h2>
           </div>
 
           <form>
             <h2>
               Reservation <br />
-              ONLINE BOOKING
+              <span>ONLINE BOOKING</span>
             </h2>
-            <img src="assets/img/ic-plate.png" alt="Image" />
-            <div>
-              <div>
+            <div class="image" style="text-align: center">
+              <img src="assets/img/ic-plate.png" alt="Image" />
+            </div>
+            <div class="forms">
+              <div class="line1">
                 <select name="options">
                   <option value="People">People</option>
                 </select>
                 <input type="date" name="date" />
                 <input type="time" name="time" />
               </div>
-              <div>
+              <div class="line2">
                 <input type="text" placeholder="Name" />
                 <input type="tel" placeholder="Phone" />
                 <input type="email" name="email" placeholder="Email" />
               </div>
+            </div>
+            <div class="btn">
               <button>BOOK NOW</button>
             </div>
           </form>
