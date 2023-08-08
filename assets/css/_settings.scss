@@ -1,4 +1,26 @@
 @font-face {
-    font-family: Allura;
-    src: url();
+  font-family: Allura;
+  src: url(../fonts/Allura/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+$white1: rgb(238, 238, 238);
+$white2: rgb(189, 193, 206);
+$color3: rgb(180, 122, 69);
+$black: rgb(33, 32, 30);
+
+@mixin flexbox {
+  display: flex;
+  align-items: center;
+}
+@mixin title {
+  color: $white1;
+  text-transform: uppercase;
+  font-family: Poppins;
 }

@@ -1,0 +1,19 @@
+@import "./settings";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: Roboto;
+  background: $black;
+  min-height: 100vh;
+  color: $white1
+}
+
+
+@import "./layout/header";
+
