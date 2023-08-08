@@ -95,7 +95,7 @@ header .txt-container {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 header .txt-container p:first-child {
   font-family: Allura;
@@ -124,7 +124,7 @@ header .header-end {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 550px;
+  min-height: 77.7934936351vh;
 }
 header .header-end .left-part-container {
   width: 50%;
@@ -208,4 +208,106 @@ header .header-end .right-part {
 header .header-end .right-part img {
   width: 100%;
   height: 100%;
+}
+
+main .session1 .dis-container {
+  text-align: center;
+}
+main .session1 .dis {
+  color: rgb(180, 122, 69);
+  font-family: Allura;
+  font-size: 2.5rem;
+}
+main .session1 img {
+  margin: 30px 0;
+}
+main .session1 .navigation {
+  width: 60%;
+  margin: auto;
+}
+main .session1 .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 70px;
+  border-bottom: 5px solid rgb(180, 122, 69);
+}
+main .session1 .navigation ul a {
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+}
+main .session1 .navigation ul hr {
+  margin-top: 5px;
+}
+main .session1 .navigation .dish {
+  background: rgb(238, 238, 238);
+  padding: 10px 20px;
+}
+main .session1 .navigation .dish .part-1,
+main .session1 .navigation .dish .part-2,
+main .session1 .navigation .dish .part-3,
+main .session1 .navigation .dish .part-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+main .session1 .navigation .dish .plats {
+  width: 50%;
+  border-bottom: 1px dashed rgb(189, 193, 206);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .session1 .navigation .dish .plats img {
+  border-radius: 50%;
+}
+main .session1 .navigation .dish .plats div {
+  width: 100%;
+}
+main .session1 .navigation .dish .plats div h3 {
+  text-transform: uppercase;
+  font-family: Roboto;
+  color: rgb(33, 32, 30);
+  font-weight: bold;
+}
+main .session1 .navigation .dish .plats div p {
+  color: rgb(33, 32, 30);
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+main .session1 .navigation .dish .plats .price {
+  color: rgb(180, 122, 69);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.background {
+  margin-top: 10%;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background: url("./../img/bg-menu-01.jpg") center/cover;
+}
+.background .navigation {
+  position: absolute;
+  top: -25%;
+  left: 20%;
 }/*# sourceMappingURL=style.css.map */

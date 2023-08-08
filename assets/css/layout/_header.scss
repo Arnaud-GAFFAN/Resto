@@ -39,7 +39,7 @@ header {
     @include flexbox;
     flex-direction: column;
    padding-top: 50px;
-   padding-bottom: 150px;
+   padding-bottom: 200px;
     p:first-child {
       font-family: Allura;
       font-size: 2.5rem;
@@ -63,7 +63,8 @@ header {
   .header-end {
     background: $white1;
     @include flexbox;
-    height: 550px;
+    min-height: 77.7934936350778vh;
+
     .left-part-container {
         width: 50%;
       padding: 10px;

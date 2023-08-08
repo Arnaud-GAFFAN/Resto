@@ -1,0 +1,72 @@
+main {
+  .session1 {
+    .dis-container{
+        text-align: center;
+    }
+    .dis {
+      color: $color3;
+      font-family: Allura;
+      font-size: 2.5rem;
+    }
+    img {
+      margin: 30px 0;
+    }
+    .navigation {
+      width: 60%;
+      margin: auto;
+      ul {
+        @include flexbox;
+        justify-content: space-around;
+        height: 70px;
+        border-bottom: 5px solid $color3;
+        a {
+          color: $white1;
+          text-decoration: none;
+        }
+        hr {
+          margin-top: 5px;
+        }
+      }
+      .dish {
+        background: $white1;
+        padding: 10px 20px;
+        .part-1,
+        .part-2,
+        .part-3,
+        .part-4 {
+          @include flexbox;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        .plats {
+          width: 50%;
+          border-bottom: 1px dashed $white2;
+          @include flexbox;
+          justify-content: space-between;
+          img {
+            border-radius: 50%;
+          }
+          div {
+            width: 100%;
+            h3 {
+              text-transform: uppercase;
+              font-family: Roboto;
+              color: $black;
+              font-weight: bold;
+            }
+            p {
+              color: $black;
+              letter-spacing: 2px;
+              margin-top: 5px;
+            }
+          }
+          .price {
+            color: $color3;
+            font-size: 1.3rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
