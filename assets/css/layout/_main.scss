@@ -73,38 +73,44 @@ main {
       align-items: normal;
       width: calc(100% - 20%);
       margin: auto;
-      .part-1 {
-        background: $black2;
+      .outline {
         width: 30%;
-        @include flexbox;
-        flex-direction: column;
-        justify-content: center;
-        .title {
-          p {
-            font-family: Allura;
-            font-size: 3rem;
-            color: $color3;
+        padding: 10px;
+        background: $black2;
+
+        .part-1 {
+          @include flexbox;
+          flex-direction: column;
+          justify-content: center;
+          border: 1px dashed $color3;
+          .title {
+            p {
+              font-family: Allura;
+              font-size: 3rem;
+              color: $color3;
+            }
+            h2 {
+              font-family: Poppins;
+              letter-spacing: 3px;
+            }
+          }
+          .days {
+            h2 {
+              color: $color3;
+              margin-top: 15px;
+              text-align: center;
+            }
+            p {
+              text-align: center;
+              margin-top: 10px;
+              margin-bottom: 20px;
+              font-size: 1.2rem;
+            }
           }
           h2 {
-            font-family: Poppins;
-            letter-spacing: 3px;
-          }
-        }
-        .days {
-          h2 {
             color: $color3;
-            margin-top: 10px;
-            text-align: center;
+            margin-bottom: 15px;
           }
-          p {
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            font-size: 1.2rem;
-          }
-        }
-        h2 {
-          color: $color3;
         }
       }
       form {
@@ -160,10 +166,141 @@ main {
             font-family: Poppins;
             background: $black2;
             color: $white1;
-            border-radius: 149px 149px 149px 149px;
-            -webkit-border-radius: 149px 149px 149px 149px;
-            -moz-border-radius: 149px 149px 149px 149px;
+            border-radius: 150px 150px 150px 150px;
+            -webkit-border-radius: 150px 150px 150px 150px;
+            -moz-border-radius: 150px 150px 150px 150px;
             cursor: pointer;
+          }
+        }
+      }
+    }
+    & + session {
+      .title {
+        color: $color3;
+        font-family: "Allura";
+        font-size: 3rem;
+        text-align: center;
+        h2 {
+          @include title;
+          font-size: 2rem;
+        }
+      }
+      .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "a1 b1"
+          "a2 b1";
+        width: calc(100% - 20%);
+        margin: auto;
+        gap: 20px;
+        .events1,
+        .events2 {
+          @include flexbox;
+          align-items: normal;
+          user-select: none;
+          .image {
+            width: 50%;
+            position: relative;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            .date {
+              background: $black;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              height: 100px;
+              width: 100px;
+              font-size: 2rem;
+              transform: translate(-50%, -50%);
+              p {
+                text-align: center;
+                transform: translateY(20%);
+              }
+            }
+          }
+          .description {
+            padding: 0 20px;
+            color: $black;
+            background: $white1;
+            width: 100%;
+            @include flexbox;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            height: 200px;
+            padding-bottom: 40px;
+            h3 {
+              @include title;
+              text-transform: none;
+              color: $black;
+              font-family: Roboto;
+              margin-left: 10px;
+              font-size: 1.5rem;
+            }
+            button {
+              font-size: 1.2rem;
+              border: none;
+              cursor: pointer;
+              font-weight: bold;
+            }
+          }
+        }
+        .events2 {
+          grid-area: a2;
+        }
+        .events3 {
+          grid-area: b1;
+          color: $black;
+          .bg {
+            background: $white1;
+            width: calc(100% - 10%);
+            margin: auto;
+            height: calc(100% - 10%);
+            transform: translateY(5%);
+            position: relative;
+            .date {
+              padding-top: 20px;
+              background: $black2;
+              color: $white2;
+              height: 100px;
+              width: 100px;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              font-size: 1.9rem;
+              text-align: center;
+            }
+            .description {
+              padding-top: calc(100% - (100% - 100px));
+              height: 100%;
+              text-align: center;
+              @include flexbox;
+              flex-direction: column;
+              justify-content: space-around;
+              user-select: none;
+              h3 {
+                font-size: 2rem;
+              }
+              button {
+                font-size: 1.2rem;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+      .text{
+        color: $black2;
+        div
+        {
+          p{
+            background: $white1;
           }
         }
       }

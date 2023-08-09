@@ -33,3 +33,11 @@ body {
     // transform: translateX(50%);
   }
 }
+.events3{
+  background: url("./../img/event-03.jpg")center/cover;
+}
+
+@import "./layout/footer";
+footer{
+  background: url("./../img/bg-footer.jpg") center/cover;
+}

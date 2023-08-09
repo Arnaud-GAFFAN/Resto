@@ -153,6 +153,7 @@ header .header-end .left-part-container .left-part h2 {
   color: rgb(238, 238, 238);
   text-transform: uppercase;
   font-family: Poppins;
+  letter-spacing: 3px;
   letter-spacing: 5px;
   color: rgb(33, 32, 30);
 }
@@ -311,9 +312,12 @@ main .session1 .reservation {
   width: 80%;
   margin: auto;
 }
-main .session1 .reservation .part-1 {
-  background: rgb(0, 0, 0);
+main .session1 .reservation .outline {
   width: 30%;
+  padding: 10px;
+  background: rgb(0, 0, 0);
+}
+main .session1 .reservation .outline .part-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,29 +331,31 @@ main .session1 .reservation .part-1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 1px dashed rgb(180, 122, 69);
 }
-main .session1 .reservation .part-1 .title p {
+main .session1 .reservation .outline .part-1 .title p {
   font-family: Allura;
   font-size: 3rem;
   color: rgb(180, 122, 69);
 }
-main .session1 .reservation .part-1 .title h2 {
+main .session1 .reservation .outline .part-1 .title h2 {
   font-family: Poppins;
   letter-spacing: 3px;
 }
-main .session1 .reservation .part-1 .days h2 {
+main .session1 .reservation .outline .part-1 .days h2 {
   color: rgb(180, 122, 69);
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: center;
 }
-main .session1 .reservation .part-1 .days p {
+main .session1 .reservation .outline .part-1 .days p {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
-main .session1 .reservation .part-1 h2 {
+main .session1 .reservation .outline .part-1 h2 {
   color: rgb(180, 122, 69);
+  margin-bottom: 15px;
 }
 main .session1 .reservation form {
   background: rgb(238, 238, 238);
@@ -429,10 +435,184 @@ main .session1 .reservation form .btn button {
   font-family: Poppins;
   background: rgb(0, 0, 0);
   color: rgb(238, 238, 238);
-  border-radius: 149px 149px 149px 149px;
-  -webkit-border-radius: 149px 149px 149px 149px;
-  -moz-border-radius: 149px 149px 149px 149px;
+  border-radius: 150px 150px 150px 150px;
+  -webkit-border-radius: 150px 150px 150px 150px;
+  -moz-border-radius: 150px 150px 150px 150px;
   cursor: pointer;
+}
+main .session1 + session .title {
+  color: rgb(180, 122, 69);
+  font-family: "Allura";
+  font-size: 3rem;
+  text-align: center;
+}
+main .session1 + session .title h2 {
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
+  font-family: Poppins;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+main .session1 + session .events {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a1 b1" "a2 b1";
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+}
+main .session1 + session .events .events1,
+main .session1 + session .events .events2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+main .session1 + session .events .events1 .image,
+main .session1 + session .events .events2 .image {
+  width: 50%;
+  position: relative;
+}
+main .session1 + session .events .events1 .image img,
+main .session1 + session .events .events2 .image img {
+  width: 100%;
+  height: 100%;
+}
+main .session1 + session .events .events1 .image .date,
+main .session1 + session .events .events2 .image .date {
+  background: rgb(33, 32, 30);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+main .session1 + session .events .events1 .image .date p,
+main .session1 + session .events .events2 .image .date p {
+  text-align: center;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+main .session1 + session .events .events1 .description,
+main .session1 + session .events .events2 .description {
+  padding: 0 20px;
+  color: rgb(33, 32, 30);
+  background: rgb(238, 238, 238);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 200px;
+  padding-bottom: 40px;
+}
+main .session1 + session .events .events1 .description h3,
+main .session1 + session .events .events2 .description h3 {
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
+  font-family: Poppins;
+  letter-spacing: 3px;
+  text-transform: none;
+  color: rgb(33, 32, 30);
+  font-family: Roboto;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+main .session1 + session .events .events1 .description button,
+main .session1 + session .events .events2 .description button {
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+main .session1 + session .events .events2 {
+  grid-area: a2;
+}
+main .session1 + session .events .events3 {
+  grid-area: b1;
+  color: rgb(33, 32, 30);
+}
+main .session1 + session .events .events3 .bg {
+  background: rgb(238, 238, 238);
+  width: 90%;
+  margin: auto;
+  height: 90%;
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+  position: relative;
+}
+main .session1 + session .events .events3 .bg .date {
+  padding-top: 20px;
+  background: rgb(0, 0, 0);
+  color: rgb(189, 193, 206);
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.9rem;
+  text-align: center;
+}
+main .session1 + session .events .events3 .bg .description {
+  padding-top: calc(100% - (100% - 100px));
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+main .session1 + session .events .events3 .bg .description h3 {
+  font-size: 2rem;
+}
+main .session1 + session .events .events3 .bg .description button {
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+main .session1 + session .text {
+  color: rgb(0, 0, 0);
+}
+main .session1 + session .text div p {
+  background: rgb(238, 238, 238);
 }
 
 .background {
@@ -447,4 +627,76 @@ main .session1 .reservation form .btn button {
   position: absolute;
   top: -25%;
   left: 20%;
+}
+
+.events3 {
+  background: url("./../img/event-03.jpg") center/cover;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 50px 0;
+  padding-left: 25%;
+}
+footer .info h2 {
+  font-size: 3rem;
+  font-family: Allura;
+  color: rgb(180, 122, 69);
+}
+footer .info p {
+  line-height: 30px;
+}
+footer .contact .newsletter input {
+  font-size: 1.3rem;
+  outline: none;
+  margin-top: 20px;
+  background: transparent;
+  border: 1px solid rgb(180, 122, 69);
+  padding: 10px;
+  opacity: 50%;
+  color: rgb(238, 238, 238);
+}
+footer .social {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .social h3 {
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
+  font-family: Poppins;
+  letter-spacing: 3px;
+}
+footer .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .social ul i {
+  color: rgb(189, 193, 206);
+  margin: 0 15px;
+}
+
+footer {
+  background: url("./../img/bg-footer.jpg") center/cover;
 }/*# sourceMappingURL=style.css.map */
