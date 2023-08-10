@@ -610,9 +610,48 @@ main .session1 + session .events .events3 .bg .description button {
 }
 main .session1 + session .text {
   color: rgb(0, 0, 0);
+  margin-top: 300px;
+  position: relative;
 }
-main .session1 + session .text div p {
+main .session1 + session .text .comment {
   background: rgb(238, 238, 238);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  -webkit-transform: translate(12.6%, -50%);
+          transform: translate(12.6%, -50%);
+}
+main .session1 + session .text .comment p {
+  margin: 50px 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+main .session1 + session .text .comment p img {
+  width: 100px;
+  height: 100px;
+  border-radius: 150px 150px 150px 150px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+}
+main .session1 + session .text .comment + div {
+  height: 400px;
+  width: 100%;
+}
+main .session1 + session .text .comment + div img {
+  height: 100%;
+  width: 100%;
 }
 
 .background {

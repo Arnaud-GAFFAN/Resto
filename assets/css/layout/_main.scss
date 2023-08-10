@@ -295,12 +295,38 @@ main {
           }
         }
       }
-      .text{
+      .text {
         color: $black2;
-        div
-        {
+        margin-top: 300px;
+        position: relative;
+        .comment{
+          background: $white1;
+          @include flexbox;
+          flex-direction: column;
+          position: absolute;
+          width: calc(100% - 20%);
+          margin: auto;
+          transform: translate(12.6%, -50%);
           p{
-            background: $white1;
+            margin: 50px 0;
+            font-size: 1.2rem;
+            text-align: center;
+            img{
+              width: 100px;
+              height: 100px;
+              border-radius: 150px 150px 150px 150px;
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%,-100%);
+            }
+          }
+          & + div{
+            height: 400px;
+            width: 100%;
+            img{
+              height: 100%;
+              width: 100%;
+            }
           }
         }
       }
