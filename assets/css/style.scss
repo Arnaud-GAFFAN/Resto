@@ -12,32 +12,41 @@ body {
   background: $black;
   min-height: 100vh;
   color: $white1;
+  scroll-behavior: smooth;
 }
 
 @import "./layout/header";
 @import "./layout/main";
 
 .background {
-  margin-top: 10%;
-
+  margin-top: 12%;
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   position: relative;
   background: url("./../img/bg-menu-01.jpg") center/cover;
   margin-bottom: 100px;
-
+  @media screen and (max-width: 1200px) {
+    margin-top: 90%;
+  }
   .navigation {
     position: absolute;
     top: -25%;
     left: 20%;
+    height: 10%;
     // transform: translateX(50%);
+    @media screen and (max-width: 1000px) {
+      top: -125%;
+    }
   }
 }
-.events3{
-  background: url("./../img/event-03.jpg")center/cover;
+.events3 {
+  background: url("./../img/event-03.jpg") center/cover;
 }
 
 @import "./layout/footer";
-footer{
+footer {
   background: url("./../img/bg-footer.jpg") center/cover;
+  @media screen and (max-width: 730px) {
+    background: none;
+  }
 }

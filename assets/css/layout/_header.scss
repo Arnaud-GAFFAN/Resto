@@ -1,10 +1,10 @@
 header {
-
   nav {
     max-width: 1000px;
     margin: auto;
     @include flexbox;
     justify-content: space-between;
+
     .brand {
       font-family: Allura;
       font-size: 3rem;
@@ -15,6 +15,9 @@ header {
       @include flexbox;
       justify-content: space-between;
       width: 70%;
+      @media screen and (max-width: 730px) {
+        display: none;
+      }
       a {
         text-decoration: none;
         color: $white1;
@@ -25,6 +28,10 @@ header {
       @include flexbox;
       justify-content: space-between;
       width: 10%;
+          @media screen and (max-width:730px) {
+            width: 50%;
+            justify-content: space-around;
+    }
       i {
         color: $white1;
         transition: 0.2s ease-in;
@@ -38,12 +45,13 @@ header {
   .txt-container {
     @include flexbox;
     flex-direction: column;
-   padding-top: 50px;
-   padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 200px;
     p:first-child {
       font-family: Allura;
       font-size: 2.5rem;
       color: $color3;
+
     }
     h1 {
       font-family: Poppins;
@@ -57,21 +65,24 @@ header {
         text-transform: uppercase;
         font-size: 1.1rem;
         letter-spacing: 4px;
+        text-align: center;
       }
     }
   }
   .header-end {
-    background: $white1;
+    overflow: hidden;
     @include flexbox;
-    min-height: 77.7934936350778vh;
-
+    align-items: normal;
+    height: 555px;
     .left-part-container {
-        width: 50%;
+      background: $white1;
       padding: 10px;
+      width: 100%;
       .left-part {
         @include flexbox;
         flex-direction: column;
         border: 2px dashed $color3;
+        height: 100%;
         p:first-child {
           color: $color3;
           font-family: Allura;
@@ -91,33 +102,36 @@ header {
           }
         }
       }
-      .chef{
+      .chef {
         @include flexbox;
         flex-direction: column;
         justify-content: center;
-        img{
-            border-radius: 50%;
+        img {
+          border-radius: 50%;
         }
-        .description{
-            @include flexbox;
-            flex-direction: column;
-            justify-content: center;
-            p{
-                color: $white2;
-                text-transform: uppercase;
-                font-family: Poppins;
-            }
+        .description {
+          @include flexbox;
+          flex-direction: column;
+          justify-content: center;
+          p {
+            color: $white2;
+            text-transform: uppercase;
+            font-family: Poppins;
+          }
         }
       }
     }
-    .right-part{
-
-       width: 50%;
-       height: 100%;
-       img{
+    .right-part {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+      img {
         width: 100%;
-        height:100%;
-       }
+        height: 100%;
+      }
     }
   }
 }
